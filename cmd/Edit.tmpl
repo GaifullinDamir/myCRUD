@@ -1,0 +1,13 @@
+{{ define "Edit" }}
+  {{ template "Header" }}
+    {{ template "Menu" }}
+   <h2>Edit House</h2>
+    <form method="POST" action="update">
+      <input type="hidden" name="uaddress" value="{{ .address }}" />
+       <label> HouseNumber </label><input type="text" name="housenumber" value="{{ .houseNumber }}"  /><br />
+      <label> ApartmentsCount </label><input type="text" name="apartmentscount" value="{{ .apartmentsCount }}"  /><br />
+      <label> FloorsCount </label><input type="text" name="floorsCount" value="{{ .floorsCount }}"  /><br />
+      <input type="submit" value="Save user" />
+    </form><br />
+  {{ template "Footer" }}
+{{ end }}

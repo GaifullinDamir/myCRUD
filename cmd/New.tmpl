@@ -1,0 +1,12 @@
+{{ define "New" }}
+  {{ template "Header" }}
+    {{ template "Menu" }}
+   <h2>New House</h2>
+    <form method="POST" action="insert">
+      <label> HouseNumber </label><input type="text" name="housenumber" /><br />
+      <label> ApartmentsCount </label><input type="text" name="apartmentscount" /><br />
+      <label> FloorsCount </label><input type="text" name="floorsCount" /><br />
+      <input type="submit" value="Save user" />
+    </form>
+  {{ template "Footer" }}
+{{ end }}

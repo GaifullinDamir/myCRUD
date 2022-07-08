@@ -1,0 +1,9 @@
+{{ define "Show" }}
+  {{ template "Header" }}
+    {{ template "Menu"  }}
+    <h2> Register {{ .address }} </h2>
+      <p>HouseNumber: {{ .houseNumber }}</p>
+      <p>ApartmentsCount:  {{ .apartmentsCount }}</p>
+      <p>FloorsCount:  {{ .floorsCount }}</p><br /> <a href="/edit?address={{ .address }}">Edit</a></p>
+  {{ template "Footer" }}
+{{ end }}
